@@ -35,7 +35,8 @@
 	icon_state = "[base_icon_state]-[CEILING(ammo_count(), 5)]"
 
 /obj/item/ammo_box/magazine/a545
-	name = "Abyss-Platform universal magazine (5.45x39)"
+	name = "Kazurov KARM-74 magazine (5.45x39)"
+	desc = "A 30-round 5.45x39mm magazine designed for the KARM-74 infantry rifle. Fits the AC-96/2 Abakan, too."
 	icon = 'modular_septic/icons/obj/items/ammo/rifle.dmi'
 	icon_state = "abrifle"
 	base_icon_state = "abrifle"
@@ -49,6 +50,25 @@
 	tetris_height = 64
 
 /obj/item/ammo_box/magazine/a545/update_icon_state()
+	. = ..()
+	icon_state = "[base_icon_state]-[ammo_count() ? 30 : 0]"
+
+/obj/item/ammo_box/magazine/tarun
+	name = "Kazurov KARM magazine (7.62x39)"
+	desc = "A 30-round 7.62x39mm Taroonian magazine designed for the outdated KARM infantry rifle."
+	icon = 'modular_septic/icons/obj/items/ammo/rifle.dmi'
+	icon_state = "abrifle"
+	base_icon_state = "abrifle"
+	ammo_type = /obj/item/ammo_casing/a762tar
+	caliber = CALIBER_SOVIET
+	max_ammo = 30
+	multiple_sprites = AMMO_BOX_ONE_SPRITE
+	drop_sound = 'modular_septic/sound/weapons/plastic_drop.ogg'
+	pickup_sound = 'modular_septic/sound/weapons/plastic_pickup.ogg'
+	tetris_width = 32
+	tetris_height = 64
+
+/obj/item/ammo_box/magazine/tarun/update_icon_state()
 	. = ..()
 	icon_state = "[base_icon_state]-[ammo_count() ? 30 : 0]"
 

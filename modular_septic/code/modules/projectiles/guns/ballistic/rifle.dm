@@ -23,8 +23,10 @@
 
 // Killer-49
 /obj/item/gun/ballistic/automatic/remis/winter
-	name = "\improper Inverno Genocídio NK-49 Assault Rifle"
-	desc = "Inverno Genocídio, 'Winter Genocide' Assault Rifle firing in 5.56. Used by Ordin- Ordinat... ORDINATORS KILL THIS BASTARD!"
+	name = "\improper Custom 'Juicy Fruit' SLV-277 optimized CQB self-defense tactical insertion carbine"
+	desc = "An outdated civilian skeletonized SLV-277 rifle that has been tailor-made for a high-speed low-drag operator. It once belonged to a citizen of the US, made obvious by a patch.\
+	The patch reads 'ELEMENTARY SCHOOL HALLWAY MONITOR ASSAULT UNIT' with a blue-lined skull in the center. Latin below reads, 'PRIMUM EXCEDERE. / NOVISSIME INTRARE.' \
+	These are my people... This is my land..."
 	icon = 'modular_septic/icons/obj/items/guns/48x32.dmi'
 	lefthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_lefthand.dmi'
 	righthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_righthand.dmi'
@@ -49,7 +51,9 @@
 	force = 14
 	custom_price = 45000
 	carry_weight = 3 KILOGRAMS
-	can_unsuppress = FALSE
+	can_unsuppress = TRUE
+	suppressor_x_offset = 2
+
 	recoil_animation_information = list(
 		"recoil_angle_upper" = -15, \
 		"recoil_angle_lower" = -25, \
@@ -69,55 +73,7 @@
 	user.client?.give_award(/datum/award/achievement/misc/nkiller, user)
 
 //Darkworld Gun
-/obj/item/gun/ballistic/automatic/remis/abyss
-	name = "\improper AN-94 5.4539mm Abyss Armaments Assault Rifle"
-	desc = "A mysterious bolshevik rifle that was produced as a result of a need for a fully-automatic standard rifle for the red's finest. \
-		The muzzle brake seems to be compatable with noise suppressors! So good."
-	icon = 'modular_septic/icons/obj/items/guns/48x32.dmi'
-	lefthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_lefthand.dmi'
-	righthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_righthand.dmi'
-	worn_icon_state = "nikonov"
-	inhand_icon_state = "nikonov"
-	icon_state = "nikonov"
-	base_icon_state = "nikonov"
-	mag_type = /obj/item/ammo_box/magazine/a545
-	fire_sound = 'modular_septic/sound/weapons/guns/rifle/ak.wav'
-	suppressed_sound = 'modular_septic/sound/weapons/guns/rifle/ak_silenced.wav'
-	load_sound = 'modular_septic/sound/weapons/guns/rifle/akmagin.wav'
-	load_empty_sound = 'modular_septic/sound/weapons/guns/rifle/akmagin.wav'
-	eject_sound = 'modular_septic/sound/weapons/guns/rifle/akmagout.wav'
-	eject_empty_sound = 'modular_septic/sound/weapons/guns/rifle/akmagout.wav'
-	safety_off_sound = 'modular_septic/sound/weapons/guns/rifle/aksafety2.wav'
-	safety_on_sound = 'modular_septic/sound/weapons/guns/rifle/aksafety1.wav'
-	rack_sound = 'modular_septic/sound/weapons/guns/rifle/akrack.wav'
-	fireselector_auto = 'modular_septic/sound/weapons/guns/rifle/aksafety2.wav'
-	fireselector_burst = 'modular_septic/sound/weapons/guns/rifle/aksafety2.wav'
-	fireselector_semi = 'modular_septic/sound/weapons/guns/rifle/aksafety1.wav'
-	fold_open_sound = 'modular_septic/sound/weapons/guns/rifle/ak_stock_open.wav'
-	fold_close_sound = 'modular_septic/sound/weapons/guns/rifle/ak_stock_close.wav'
-	force = 16
-	fire_delay = 2
-	burst_size = 2
-	can_suppress = TRUE
-	suppressor_x_offset = 10
-	gunshot_animation_information = list(
-		"pixel_x" = 32, \
-		"pixel_y" = 3, \
-		"inactive_wben_suppressed" = TRUE, \
-	)
-	recoil_animation_information = list(
-		"recoil_angle_upper" = -10, \
-		"recoil_angle_lower" = -20, \
-	)
-	client_recoil_animation_information = list(
-		"strength" = 0.2,
-		"duration" = 1,
-	)
-	custom_price = 30000
-	w_class = WEIGHT_CLASS_BULKY
-	full_auto = TRUE
-	foldable = TRUE
-	folded = FALSE
+
 //donator gun
 /obj/item/gun/ballistic/automatic/remis/abyss/donator
 	name = "\improper AN-95 5.4539mm Abyss Armaments Paypig Assault Rifle"
@@ -437,3 +393,116 @@
 	full_auto = TRUE
 	foldable = TRUE
 	folded = FALSE
+
+// DOGS OF TAROON CONTENT GOES HERE
+
+/obj/item/gun/ballistic/automatic/remis/abyss
+	name = "\improper AC-96/2 'Abakan' infantry rifle"
+	desc = "A rare rifle adopted by the Taroonian Royal Operations Group (العمليات الملكية). It was designed as a replacement for the outdated Kazurov family. An internal pulley system improves accuracy and creates a hyperburst effect. \
+		The muzzle brake can be removed, allowing the use of a suppressor should you find one."
+	icon = 'modular_septic/icons/obj/items/guns/48x32.dmi'
+	lefthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_lefthand.dmi'
+	righthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_righthand.dmi'
+	worn_icon_state = "nikonov"
+	inhand_icon_state = "nikonov"
+	icon_state = "nikonov"
+	base_icon_state = "nikonov"
+	mag_type = /obj/item/ammo_box/magazine/a545
+	fire_sound = 'modular_septic/sound/weapons/guns/rifle/ak.wav'
+	suppressed_sound = 'modular_septic/sound/weapons/guns/rifle/ak_silenced.wav'
+	load_sound = 'modular_septic/sound/weapons/guns/rifle/akmagin.wav'
+	load_empty_sound = 'modular_septic/sound/weapons/guns/rifle/akmagin.wav'
+	eject_sound = 'modular_septic/sound/weapons/guns/rifle/akmagout.wav'
+	eject_empty_sound = 'modular_septic/sound/weapons/guns/rifle/akmagout.wav'
+	safety_off_sound = 'modular_septic/sound/weapons/guns/rifle/aksafety2.wav'
+	safety_on_sound = 'modular_septic/sound/weapons/guns/rifle/aksafety1.wav'
+	rack_sound = 'modular_septic/sound/weapons/guns/rifle/akrack.wav'
+	fireselector_auto = 'modular_septic/sound/weapons/guns/rifle/aksafety2.wav'
+	fireselector_burst = 'modular_septic/sound/weapons/guns/rifle/aksafety2.wav'
+	fireselector_semi = 'modular_septic/sound/weapons/guns/rifle/aksafety1.wav'
+	fold_open_sound = 'modular_septic/sound/weapons/guns/rifle/ak_stock_open.wav'
+	fold_close_sound = 'modular_septic/sound/weapons/guns/rifle/ak_stock_close.wav'
+	force = 16
+	fire_delay = 1
+	burst_size = 2
+	can_suppress = TRUE
+	suppressor_x_offset = 0
+	gunshot_animation_information = list(
+		"pixel_x" = 32, \
+		"pixel_y" = 3, \
+		"inactive_wben_suppressed" = TRUE, \
+	)
+	recoil_animation_information = list(
+		"recoil_angle_upper" = -10, \
+		"recoil_angle_lower" = -20, \
+	)
+	client_recoil_animation_information = list(
+		"strength" = 0.2,
+		"duration" = 1,
+	)
+	custom_price = 30000
+	w_class = WEIGHT_CLASS_BULKY
+	full_auto = FALSE
+	foldable = TRUE
+	folded = FALSE
+
+/obj/item/gun/ballistic/automatic/remis/abyss/ak74
+	name = "\improper Kazurov KARMF-74 infantry rifle"
+	desc = "A quintessential part of Taroon's military and law enforcement armories. Kazurov's Automatic Rifle, Modern, Foldable, Model 2474. \
+	A gas-operated infantry rifle capable of fully automatic fire, cheap and reliable."
+	icon = 'modular_septic/icons/obj/items/guns/48x32.dmi'
+	lefthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_lefthand.dmi'
+	righthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_righthand.dmi'
+	worn_icon_state = "nikonov"
+	inhand_icon_state = "nikonov"
+	icon_state = "afghan"
+	base_icon_state = "afghan"
+	fire_delay = 2
+	burst_size = 3
+	can_suppress = FALSE
+	full_auto = TRUE
+
+/obj/item/gun/ballistic/automatic/remis/abyss/ak74/ukoroch
+	name = "\improper Kazurov KARMF-74C carbine"
+	desc = "A shortened version of the KARMF-74 infantry rifle designed for tank crews, special police units, and close quarters combat. Kazurov's Automatic Rifle, Modern, Foldable, Model 2474, Compact. \
+	It's not about size. It's how you use it!"
+	icon_state = "krink"
+	base_icon_state = "krink"
+	fire_delay = 1.5
+
+/obj/item/gun/ballistic/automatic/remis/abyss/ak74/ukoroch/coalition
+	name = "\improper Kazurov KARMF-74CM spec-ops carbine"
+	desc = "A modification of the KARMF-74C carbine specialty-made for the units that make up the Eastern Taroonian Coalition. Kazurov's Automatic Rifle, Modern, Foldable, Model 2474, Compact, Marsh environments. \
+	Can be fitted with a suppressor, which will let you make use of an additional foregrip. The stock must be unfolded manually."
+	icon_state = "mec"
+	base_icon_state = "mec"
+	fire_delay = 1.4
+	can_suppress = TRUE
+	folded = TRUE
+
+/obj/item/gun/ballistic/automatic/remis/abyss/akm
+	name = "\improper Kazurov KARM infantry rifle"
+	desc = "An outdated infantry rifle, firing an even more outdated cartridge. Phased out centuries ago by the TAF and NHPD, but remains in use by criminals, freedom fighters, and army reserves. Kazurov's Automatic Rifle, Modern. \
+	Chambered in 7.62mm Taroonian, which does more damage to flesh but performs poorly against armor."
+	icon = 'modular_septic/icons/obj/items/guns/48x32.dmi'
+	lefthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_lefthand.dmi'
+	righthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_righthand.dmi'
+	worn_icon_state = "nikonov"
+	inhand_icon_state = "nikonov"
+	icon_state = "akms"
+	base_icon_state = "akms"
+	fire_delay = 3
+	burst_size = 3
+	can_suppress = FALSE
+	full_auto = TRUE
+	foldable = TRUE
+	mag_type = /obj/item/ammo_box/magazine/tarun
+	force = 20
+
+/obj/item/gun/ballistic/automatic/remis/abyss/akm/elysium
+	name = "\improper Al-Jamahir KARMA infantry rifle"
+	desc = "A modernized Kazurov infantry rifle put together by a rebel cell, with heavier-duty parts and a special mini-computer mounted on the gas block - complete with a smart-sight. Kazurov's Automatic Rifle, Modern, Airburst. \
+	Karma. What goes around, comes around."
+	icon_state = "elysium"
+	base_icon_state = "elysium"
+	foldable = FALSE

@@ -11,8 +11,8 @@
 	achievement_quality = ACHIEVEMENT_GOOD
 
 /datum/award/achievement/misc/nkiller
-	name = "NK-49"
-	desc = "Got your hands on the Inverno Genocídio NK-49 rifle."
+	name = "Sheepdog"
+	desc = "You lead the herd. You're an exemplary of self-defense, God, and the second amendment. And those of inferior intellect have never answered: What if you were a genemodder in New Hejaz?"
 	database_id = MEDAL_NKILLER
 	achievement_quality = ACHIEVEMENT_GOOD
 
@@ -29,8 +29,8 @@
 	achievement_quality = ACHIEVEMENT_BAD
 
 /datum/award/achievement/misc/copium
-	name = "Cope, Seethe, Dilate"
-	desc = "Overdosed on copium."
+	name = "Modern field medicine"
+	desc = "I FUCKING LOVE OPIOIDS!!!!!!!!!!!"
 	database_id = MEDAL_COPIUM
 	achievement_quality = ACHIEVEMENT_BAD
 
@@ -47,13 +47,13 @@
 	achievement_quality = ACHIEVEMENT_GOOD
 
 /datum/award/achievement/misc/meudeus
-	name = "MEU DEUS"
+	name = "GRENA-"
 	desc = "Somehow end up examining a 40mm grenade as It's coming at you."
 	database_id = MEDAL_MEUDEUS
 	achievement_quality = ACHIEVEMENT_RARE
 
 /datum/award/achievement/misc/imfucked
-	name = "I'M FUCKED"
+	name = "Awkwaaaaard..."
 	desc = "Attempt to put the pin on a grenade while It's already spooned."
 	database_id = MEDAL_IMFUCKED
 	achievement_quality = ACHIEVEMENT_BAD

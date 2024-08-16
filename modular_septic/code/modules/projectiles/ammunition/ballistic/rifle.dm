@@ -34,6 +34,15 @@
 	world_icon_state = "545b-casing"
 	projectile_type = /obj/projectile/bullet/a545/ap
 
+/obj/item/ammo_casing/a762tar
+	name = "7.62x39 steel bullet casing"
+	desc = "A steel-cased 7.62x39 Taroonian cartridge."
+	icon_state = "c762"
+	base_icon_state = "c762"
+	world_icon_state = "c762-casing"
+	caliber = CALIBER_SOVIET
+	projectile_type = /obj/projectile/bullet/a762tar
+
 /obj/item/ammo_casing/a49234g11
 	name = "4.92x34 bullet"
 	desc = "Somewhat rare caseless ammunition, If It's spent, the universe will explode."
