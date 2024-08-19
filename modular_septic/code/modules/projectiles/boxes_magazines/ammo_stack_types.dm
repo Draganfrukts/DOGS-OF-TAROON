@@ -109,6 +109,15 @@
 /obj/item/ammo_box/magazine/ammo_stack/a762/loaded
 	start_empty = FALSE
 
+/obj/item/ammo_box/magazine/ammo_stack/a762tar
+	name = "7.62x39 rounds"
+	icon_state = "c762-1"
+	base_icon_state = "c762"
+	world_icon_state = "762-casing"
+	caliber = CALIBER_A762
+	max_ammo = 8
+	ammo_type = /obj/item/ammo_casing/a762tar
+
 /obj/item/ammo_box/magazine/ammo_stack/a556
 	name = "5.56 rounds"
 	icon_state = "c545-1"

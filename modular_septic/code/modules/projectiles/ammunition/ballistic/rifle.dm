@@ -64,8 +64,8 @@
 	stack_type = /obj/item/ammo_box/magazine/ammo_stack/a556steyr
 
 /obj/item/ammo_casing/a762svd
-	name = "7.62x54R bullet casing"
-	desc = "A 7.62x54R bullet casing."
+	name = "20x54mm AP-I bullet casing"
+	desc = "A 20x54mm AP-I bullet casing."
 	icon_state = "c762"
 	base_icon_state = "c762"
 	world_icon_state = "762-casing"
@@ -74,8 +74,8 @@
 	stack_type = /obj/item/ammo_box/magazine/ammo_stack/a762svd
 
 /obj/item/ammo_casing/a762svd/ap
-	name = "7.62x54R black-tip bullet casing"
-	desc = "A 7.62x54R black-tip bullet casing."
+	name = ".77 Federal bullet casing"
+	desc = "A vacuum-sealed, plasteel-cased, hot-loaded 20x54mm APFSDDUHEIS bullet casing."
 	world_icon_state = "762b-casing"
 	caliber = CALIBER_54R
 	projectile_type = /obj/projectile/bullet/a762svd/ap
@@ -91,8 +91,8 @@
 	stack_type = /obj/item/ammo_box/magazine/ammo_stack/a762x51
 
 /obj/item/ammo_casing/a276
-	name = ".276 Federson bullet casing"
-	desc = "A .276 Federson bullet casing."
+	name = ".458 Vizcacha bullet casing"
+	desc = "A .458 Vizcacha bullet casing."
 	icon_state = "c762"
 	base_icon_state = "c762"
 	world_icon_state = "762-casing"

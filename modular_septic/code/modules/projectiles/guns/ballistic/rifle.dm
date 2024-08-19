@@ -250,9 +250,10 @@
 
 // 7.62x54R Lampiao sniper-rifle
 /obj/item/gun/ballistic/automatic/remis/svd
-	name = "\proper Lampiao semi-automatic designated marksman rifle"
-	desc = "A Lampiao sniper-rifle firing in 7.62x54R, the design allows for comfortable medium and long range combat, and unconventional, but effective CQC against armored targets. \
-	 Has a dovetail mount for a PSO-1M2-1 4x24 scope and a threaded barrel for a sound-suppressor. "
+	name = "\proper 'Poet' self-loading rifle"
+	desc = "An Iseurian-made rifle designed to fire Intersol 20x54mm rounds. It performed poorly against the home-grown Strages, but found a niche in colonial and illegal markets. \
+	Normally, you'd use vacuum-sealed hot-loaded plasteel-cased airburst 20x54mm APFSDDUHEIS rounds, but you'll have to settle for AP-I. \
+	 Has a mount for a standard medium-range scope."
 	icon = 'modular_septic/icons/obj/items/guns/64x32.dmi'
 	lefthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_lefthand.dmi'
 	righthand_file = 'modular_septic/icons/obj/items/guns/inhands/rifle_righthand.dmi'
@@ -327,8 +328,9 @@
 	tetris_height = 128
 
 /obj/item/gun/ballistic/rifle/boltaction/remis/federson
-	name = "\improper Federson \"Osaco Chuckster\" bolt-action rifle"
-	desc = "A bolt-action rifle capable of piercing through armor, and making accurate shots even at a range. It's cursed by having It's own cartridge unfortunately, .276 Federson."
+	name = "\improper 'Icpalli' horseback rifle"
+	desc = "A vintage lever action rifle that was commonly carried by statists through the Mexican reconquista of 2074, notoriously used in the execution of \
+	Juan Arturo Gregorio Perez-Gonzalez del Monte Santo de las Rosas Carmesíes, the second - who opposed the idea of preventing citizens of then-fractured North California from learning Spanish. Chambered in .458 Vizcacha."
 	icon_state = "pedersen"
 	base_icon_state = "pedersen"
 	inhand_icon_state = "pedersen"

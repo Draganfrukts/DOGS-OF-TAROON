@@ -204,8 +204,8 @@
 
 // GLOCK-17
 /obj/item/gun/ballistic/automatic/pistol/remis/glock17
-	name = "\improper Gosma-17 9mm pistol"
-	desc = "A chunky pistol often accompanied with the screams of thugs."
+	name = "\improper Glock 85 Gen. 7 service pistol"
+	desc = "An illegal reproduction of the newest Glock pistol. It's fundamentally the same as the centuries-old Glock 19."
 	icon = 'modular_septic/icons/obj/items/guns/pistol.dmi'
 	icon_state = "glock"
 	base_icon_state = "glock"

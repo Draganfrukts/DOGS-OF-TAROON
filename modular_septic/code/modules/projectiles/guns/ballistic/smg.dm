@@ -172,8 +172,8 @@
 
 // SUPPRESSED HK SMG
 /obj/item/gun/ballistic/automatic/remis/smg/solitario/suppressed
-	name = "Solitario-SD Inseguro R7 \"Saber\" submachine gun"
-	desc = "An integrally suppressed version of the Solitario, changed post-factory to be chambered in .380, however. This has made the drum mags incompatible."
+	name = "Gemry & Cole MP5SD6 submachine gun"
+	desc = "A recreation of the Heckler & Koch MP5 by the now-dismantled AI gunsmiths J. Emerald and C. Cobson of the Dakota Commonwealth, chambered for 6mm Martian."
 	icon = 'modular_septic/icons/obj/items/guns/48x32.dmi'
 	fire_sound = 'modular_septic/sound/weapons/guns/smg/hksmg380_silenced.ogg'
 	suppressed_sound = 'modular_septic/sound/weapons/guns/smg/hksmg380_silenced.ogg'
